@@ -1,5 +1,5 @@
 with orders as (
-    select * from fct_orders
+    select * from {{ ref('core_platform2', 'fct_orders') }} 
 ),
 
 final as (
